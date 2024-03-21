@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assingment-04-case-05</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+
+    <style>
+        main{
+            width: 50vw;
+            height: 50vh;
+            border: 1px solid black;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+        section{
+            display: flex;
+            width: 200vw;
+            animation: animi;
+            animation-direction: alternate;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+        section>div{
+            width: 50vw;
+            height: 50vh;
+            background-color: deeppink;
+            /* border: 1px solid black;*/
+        }
+        section>div:first-child{
+            background-image: url("assets/slide1.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        section>div:nth-child(2){
+            background-image: url("assets/slide2.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        section>div:nth-child(3){
+            background-image: url("assets/slide3.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        section>div:nth-child(4){
+            background-image: url("assets/slide4.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        @keyframes animi {
+            0%,20%{
+                transform: translateX(0%);
+
+            }
+            25%,45%{
+                transform: translateX(-25%);
+            }
+            50%,70%{
+                transform: translateX(-50%);
+            }
+            75%,100%{
+                transform: translateX(-75%);
+
+            }
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>
